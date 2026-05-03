@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JAYASURYA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:ital,wght@0,200;0,400;0,700;1,200&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<div id="cursor"></div>
+
+
+  <div id="loader">
+  
+  <div class="loader-logo">
+    <img src="c:\Users\acer\Downloads\js_smilepic.jpeg" alt="logo" class="loader-img">
+  </div>
+
+  <div class="loader-progress">
+    <div class="loader-track">
+      <div class="loader-fill" id="loader-fill"></div>
+    </div>
+    <span class="loader-pct" id="loader-pct">0</span>
+  </div>
+
+  <p class="loader-label">Initializing Experience</p>
+</div>
+  <!-- NAV -->
+  <header id="site-header">
+    
+      <span class="hd-tagline">Engineer</span>
+    </div>
+    <nav class="hd-nav">
+      <a href="#about" class="hd-link">About</a>
+      <a href="#skills" class="hd-link">Skills</a>
+      <a href="#work" class="hd-link">Work</a>
+      <a href="#contact" class="hd-link">Contact</a>
+    </nav>
+    <a href="#contact" class="hd-btn mag-btn">
+      <span>Available for hire</span>
+      <i class="btn-dot"></i>
+    </a>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <canvas id="mesh-canvas"></canvas>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orb orb-c"></div>
+    <div class="grain"></div>
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-inner" id="hero-layer">
+      <div class="hero-index" id="hi-index">
+        <span class="idx-bar"></span>
+        <span>01 / INTRO</span>
+      </div>
+
+      <div class="hero-name-wrap">
+        <div class="clip-row"><span class="hero-word" id="hw1">JAYA</span></div>
+        <div class="clip-row clip-row--offset">
+          <span class="hero-word hero-word--outline" id="hw2">SURYA</span>
+        </div>
+      </div>
+
+      <div class="hero-descriptor" id="hero-desc">
+        <p class="desc-line" id="dl1">computer science Engineer</p>
+        <p class="desc-line" id="dl2">Problem Solver</p>
+        <p class="desc-line" id="dl3">entrepreneur</p>
+      </div>
+
+      <div class="hero-bottom" id="hero-bottom">
+        <div class="hero-scroll-hint">
+          <div class="scroll-track"><div class="scroll-thumb"></div></div>
+          <span>Scroll to explore</span>
+        </div>
+        <div class="hero-ctas">
+          <a href="#work" class="btn-primary mag-btn"><span class="btn-inner">View Projects</span></a>
+          <a href="#about" class="btn-line mag-btn">Who I am →</a>
+        </div>
+        <div class="hero-availability">
+          <span class="avail-dot"></span>
+          <span>Open to projects · 2025</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="corner corner-tl"></div>
+    <div class="corner corner-tr"></div>
+    <div class="corner corner-bl"></div>
+    <div class="corner corner-br"></div>
+  </section>
+
+<!-- ABOUT -->
+<section id="about" class="s-section s-about">
+  <div class="container">
+    <div class="s-label js-reveal">
+      <span class="s-num">02</span>
+      <span class="s-name">About Me</span>
+      <span class="s-line-deco"></span>
+    </div>
+
+    <div class="about-layout">
+      
+      <!-- IMAGE SIDE -->
+      <div class="about-img-col js-reveal">
+        <div class="about-frame" id="tilt-frame">
+          
+          <div class="about-photo">
+            <!-- 🔥 YOUR IMAGE HERE -->
+            <img src="c:\Users\acer\AppData\Local\Packages\AdobeSystemsIncorporated.AdobePhotoshopExpress_mtcwf2zmmt10c\LocalState\Share\Images\AdobeExpressPhotos_24be86aff7464a97bc781509750cd0de_CopyEdited.jpg" alt="Jayasurya" class="profile-img">
+          </div>
+
+          <div class="frame-glow"></div>
+        </div>
+
+        <div class="about-float-card glass-card js-float">
+          <span class="afc-num">01</span>
+          <span class="afc-lbl">Creative<br>Developer</span>
+        </div>
+      </div>
+
+      <!-- TEXT SIDE -->
+      <div class="about-text-col">
+        <h2 class="about-heading js-line-reveal">
+          I build digital<br>
+          <em>experiences</em> — not just<br>
+          websites.
+        </h2>
+
+        <div class="about-body js-reveal">
+          <p>I focus on creating clean, modern experiences that feel smooth and easy to use. I’m interested in how ideas turn into real products and how they can create value.</p>
+          <p>I like keeping things simple, meaningful, and effective.</p>
+        </div>
+
+        <div class="about-pills js-reveal">
+          <span class="pill">HTML / CSS</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">UI/UX Design</span>
+          <span class="pill">Entrepreneur</span>
+          <span class="pill">Design Thinking</span>
+        </div>
+
+        <div class="about-metrics js-reveal">
+          <div class="metric">
+            <span class="m-val" data-target="10">0</span>
+            <span class="m-lbl">Projects</span>
+          </div>
+          <div class="metric">
+            <span class="m-val" data-target="5">0</span>
+            <span class="m-lbl">Skills</span>
+          </div>
+          <div class="metric">
+            <span class="m-val" data-target="1">0</span>
+            <span class="m-lbl">Goal: Growth</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- SKILLS -->
+  <section id="skills" class="s-section s-skills">
+    <div class="container">
+      <div class="s-label js-reveal">
+        <span class="s-num">03</span>
+        <span class="s-name">Expertise</span>
+        <span class="s-line-deco"></span>
+      </div>
+      <h2 class="s-heading js-line-reveal">The Toolkit</h2>
+      <div class="skills-grid">
+
+        <div class="sk-card glass-card js-reveal mag-btn">
+          <span class="sk-idx">01</span>
+          <div class="sk-glyph">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="15" height="15" stroke="currentColor" stroke-width="1.2"/><rect x="27" y="6" width="15" height="15" stroke="currentColor" stroke-width="1.2"/><rect x="6" y="27" width="15" height="15" stroke="currentColor" stroke-width="1.2"/><rect x="27" y="27" width="15" height="15" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="sk-title">Frontend Engineering</h3>
+          <p class="sk-desc">React, Vue, Next.js — pixel-perfect, performant, accessible.</p>
+          <div class="sk-meter"><div class="sk-bar" data-w="94"></div></div>
+          <span class="sk-pct">94%</span>
+        </div>
+
+        <div class="sk-card glass-card js-reveal mag-btn">
+          <span class="sk-idx">02</span>
+          <div class="sk-glyph">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="1.2"/><path d="M24 8 Q40 24 24 40 Q8 24 24 8" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+          </div>
+          <h3 class="sk-title">Motion & Animation</h3>
+          <p class="sk-desc">GSAP, Framer Motion, Three.js — the art of movement.</p>
+          <div class="sk-meter"><div class="sk-bar" data-w="91"></div></div>
+          <span class="sk-pct">91%</span>
+        </div>
+
+        <div class="sk-card glass-card js-reveal mag-btn">
+          <span class="sk-idx">03</span>
+          <div class="sk-glyph">
+            <svg viewBox="0 0 48 48" fill="none"><polygon points="24,4 44,36 4,36" stroke="currentColor" stroke-width="1.2" fill="none"/><line x1="24" y1="4" x2="24" y2="36" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="sk-title">UX / Product Design</h3>
+          <p class="sk-desc">Systems thinking, Figma, prototyping — clarity through chaos.</p>
+          <div class="sk-meter"><div class="sk-bar" data-w="87"></div></div>
+          <span class="sk-pct">87%</span>
+        </div>
+
+        <div class="sk-card glass-card js-reveal mag-btn">
+          <span class="sk-idx">04</span>
+          <div class="sk-glyph">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="12" cy="24" r="6" stroke="currentColor" stroke-width="1.2"/><circle cx="36" cy="12" r="6" stroke="currentColor" stroke-width="1.2"/><circle cx="36" cy="36" r="6" stroke="currentColor" stroke-width="1.2"/><line x1="18" y1="24" x2="30" y2="15" stroke="currentColor" stroke-width="1.2"/><line x1="18" y1="24" x2="30" y2="33" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="sk-title">Backend & APIs</h3>
+          <p class="sk-desc">Node.js, Python, PostgreSQL — robust foundations that scale.</p>
+          <div class="sk-meter"><div class="sk-bar" data-w="79"></div></div>
+          <span class="sk-pct">79%</span>
+        </div>
+
+        <div class="sk-card glass-card js-reveal mag-btn">
+          <span class="sk-idx">05</span>
+          <div class="sk-glyph">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M8 40 L24 8 L40 40" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M13 30 L35 30" stroke="currentColor" stroke-width="1.2"/></svg>
+          </div>
+          <h3 class="sk-title">3D & WebGL</h3>
+          <p class="sk-desc">Three.js, Blender, GLSL shaders — the third dimension, tamed.</p>
+          <div class="sk-meter"><div class="sk-bar" data-w="74"></div></div>
+          <span class="sk-pct">74%</span>
+        </div>
+
+        <div class="sk-card glass-card js-reveal mag-btn">
+          <span class="sk-idx">06</span>
+          <div class="sk-glyph">
+            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="14" width="32" height="22" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M16 36 L16 42 M32 36 L32 42 M10 42 L38 42" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="sk-title">DevOps & Cloud</h3>
+          <p class="sk-desc">AWS, Docker, CI/CD — infrastructure as elegant as the product.</p>
+          <div class="sk-meter"><div class="sk-bar" data-w="71"></div></div>
+          <span class="sk-pct">71%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="s-section s-work">
+    <div class="container">
+      <div class="s-label js-reveal">
+        <span class="s-num">04</span>
+        <span class="s-name">Selected Work</span>
+        <span class="s-line-deco"></span>
+      </div>
+      <h2 class="s-heading js-line-reveal">Recent Projects</h2>
+      <div class="work-grid">
+
+        <article class="wk-card js-reveal" data-accent="#00d4ff">
+          <div class="wk-visual">
+            <div class="wk-scene" style="--c1:#020b18;--c2:#041229;--c3:#062040">
+              <div class="wk-fx wk-fx--grid"></div>
+              <div class="wk-label-3d">PORTFOLIO</div>
+            </div>
+            <div class="wk-hover-layer">
+              <a href="#" class="wk-open mag-btn">
+                <svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Open Case
+              </a>
+            </div>
+          </div>
+          <div class="wk-info">
+            <div class="wk-meta"><span>SaaS Dashboard</span><span>·</span><span>2024</span></div>
+            <h3 class="wk-title">PORTFOLIO</h3>
+            <p class="wk-desc">3D portfolio </p>
+            <div class="wk-tags"><span>html</span><span>css</span><span>js</span></div>
+          </div>
+        </article>
+
+        <article class="wk-card js-reveal" data-accent="#c8a96e">
+          <div class="wk-visual">
+            <div class="wk-scene" style="--c1:#18100a;--c2:#2a1a08;--c3:#3d2610">
+              <div class="wk-fx wk-fx--rings"></div>
+              <div class="wk-label-3d">LUXE</div>
+            </div>
+            <div class="wk-hover-layer">
+              <a href="#" class="wk-open mag-btn">
+                <svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Open Case
+              </a>
+            </div>
+          </div>
+          <div class="wk-info">
+            <div class="wk-meta"><span>CHATTY/span><span>·</span><span>2024</span></div>
+            <h3 class="wk-title">Chatty</h3>
+            <p class="wk-desc">Personal chat site for communication</p>
+            <div class="wk-tags"><span>js</span><span>Database</span><span>html</span></div>
+          </div>
+        </article>
+
+        <article class="wk-card js-reveal" data-accent="#b060ff">
+          <div class="wk-visual">
+            <div class="wk-scene" style="--c1:#0d0518;--c2:#180930;--c3:#24124a">
+              <div class="wk-fx wk-fx--wave"></div>
+              <div class="wk-label-3d">SMART EDU</div>
+            </div>
+            <div class="wk-hover-layer">
+              <a href="#" class="wk-open mag-btn">
+                <svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Open Case
+              </a>
+            </div>
+          </div>
+          <div class="wk-info">
+            <div class="wk-meta"><span>Smart Edu</span><span>·</span><span>2023</span></div>
+            <h3 class="wk-title">Education</h3>
+            <p class="wk-desc">site for student study purpose (mini project)</p>
+            <div class="wk-tags"><span>Vue</span><span>Canvas</span><span>WebAudio</span></div>
+          </div>
+        </article>
+
+        <article class="wk-card js-reveal" data-accent="#00ff9d">
+          <div class="wk-visual">
+            <div class="wk-scene" style="--c1:#030f09;--c2:#051a10;--c3:#082818">
+              <div class="wk-fx wk-fx--dots"></div>
+              <div class="wk-label-3d">MOODIFY</div>
+            </div>
+            <div class="wk-hover-layer">
+              <a href="#" class="wk-open mag-btn">
+                <svg width="18" height="18" viewBox="0 0 18 18"><path d="M4 14L14 4M14 4H7M14 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Open Case
+              </a>
+            </div>
+          </div>
+          <div class="wk-info">
+            <div class="wk-meta"><span>Moodify</span><span>·</span><span>2023</span></div>
+            <h3 class="wk-title">Moodify</h3>
+            <p class="wk-desc">This project was used to analyse face, say mood, eye blink game, eye moment typewriter </p>
+            <div class="wk-tags"><span>JS</span><span>CSS</span><span>HTML</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="s-section s-contact">
+    <div class="contact-bg-text" aria-hidden="true">HELLO</div>
+    <div class="container">
+      <div class="s-label js-reveal">
+        <span class="s-num">05</span>
+        <span class="s-name">Contact</span>
+        <span class="s-line-deco"></span>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-left">
+          <h2 class="contact-heading js-line-reveal">
+            Got a wild<br><em>idea?</em><br>Let's build it.
+          </h2>
+          <p class="contact-sub js-reveal">Taking on select projects for 2025. If your vision matches my standards for craft and ambition — let's talk.</p>
+          <div class="contact-details js-reveal">
+            <a href="mailto:hello@revasolano.com" class="cd-row mag-btn">
+              <span class="cd-icon">✉</span>
+              <span class="cd-text">jayasurya28806@gmail.com</span>
+              <span class="cd-arrow">↗</span>
+            </a>
+            <a href="#" class="cd-row mag-btn">
+              <span class="cd-icon">🅾</span>
+              <span class="cd-text">@jayaa_suryaa</span>
+              <span class="cd-arrow">↗</span>
+            </a>
+            <a href="#" class="cd-row mag-btn">
+              <span class="cd-icon">in</span>
+              <span class="cd-text">linkedin/jayaasuryaa</span>
+              <span class="cd-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-col js-reveal">
+          <form class="c-form glass-card" id="c-form" novalidate>
+            <div class="cf-group">
+              <input type="text" id="cf-name" placeholder=" " autocomplete="off" required />
+              <label for="cf-name">Your Name</label>
+              <div class="cf-underline"></div>
+            </div>
+            <div class="cf-group">
+              <input type="email" id="cf-email" placeholder=" " autocomplete="off" required />
+              <label for="cf-email">Email Address</label>
+              <div class="cf-underline"></div>
+            </div>
+            <div class="cf-group">
+              <input type="text" id="cf-budget" placeholder=" " autocomplete="off" />
+              <label for="cf-budget">Project Budget (optional)</label>
+              <div class="cf-underline"></div>
+            </div>
+            <div class="cf-group">
+              <textarea id="cf-msg" placeholder=" " rows="4" required></textarea>
+              <label for="cf-msg">Tell me about your project</label>
+              <div class="cf-underline"></div>
+            </div>
+            <button type="submit" class="cf-submit mag-btn" id="cf-submit">
+              <span class="cfs-text">Send Message</span>
+              <span class="cfs-icon">
+                <svg width="16" height="16" viewBox="0 0 16 16"><path d="M2 8h12M10 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="site-footer">
+    <div class="container ft-inner">
+      <p class="ft-name">JAYASURYA</p>
+      <p class="ft-copy">© 2025 — Designed &amp; built with obsession.</p>
+      <div class="ft-socials">
+        <a href="#" class="ft-soc mag-btn">GH</a>
+        <a href="#" class="ft-soc mag-btn">DR</a>
+        <a href="#" class="ft-soc mag-btn">TW</a>
+        <a href="#" class="ft-soc mag-btn">LI</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
